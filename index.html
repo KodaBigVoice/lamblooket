@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lamblooket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="gate">
+  <form class="gate-card" id="join">
+    <div class="mark" aria-label="Lamblooket">Lamb<span>l</span><span class="oo" aria-hidden="true"><i></i><i></i></span><span>ket</span></div>
+    <h1 style="font-size:24px">Join a game</h1>
+    <div class="field"><label for="code">Game code</label><input class="in code-in" id="code" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="000000"></div>
+    <p class="err" id="join-msg"></p>
+    <button class="btn primary">Join</button>
+    <p class="foot"><a href="teacher.html">Teacher sign-in</a></p>
+  </form>
+</div>
+<script>
+document.getElementById('join').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('join-msg').textContent = 'Live games are coming soon. Your teacher will tell you when to use this.';
+});
+</script>
+</body>
+</html>
